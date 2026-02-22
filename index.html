@@ -5,20 +5,22 @@
   <script src="https://unpkg.com/vue@3"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
-
-<div id="gallery">
-  <h2>Gallery</h2>
-  <img v-for="pic in images" :src="pic" width="150" style="margin:8px;">
-</div>
-
-<script src="https://unpkg.com/vue@3"></script>
-<script src="js/gallery.js"></script>  
 <body>
 
-<div id="app">
-  <h1>{{ Hellooo WorllllDDD!!! }}</h1>
-</div>
+ 
+  <div id="app">
+    <h1>{{ message }}</h1>
+  </div>
 
-<script src="js/script.js"></script>
+ 
+  <div id="gallery">
+    <h2>Gallery</h2>
+    <img v-for="pic in images" :src="pic" width="150" style="margin:8px;" alt="Gallery image">
+  </div>
+
+ 
+  <script src="js/script.js"></script>
+  <script src="js/gallery.js"></script>
+
 </body>
 </html>
