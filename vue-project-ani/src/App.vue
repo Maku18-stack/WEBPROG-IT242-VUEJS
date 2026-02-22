@@ -3,21 +3,29 @@ import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 </script>
 
+<script setup>
+import FoodItem from './components/FoodItem.vue'
+</script>
+
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <h1>Fruits</h1>
 
-    <div class="wrapper">
-      <h1>My Vue Project</h1>
-      <p>Updated using github.dev 🚀</p>
-      <HelloWorld msg="Vue is working!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div class="container">
+    <FoodItem title="Mangoes and Banans" description="I like mangoes and bananas" />
+    <FoodItem title="Mangoes and Banans" description="I like mangoes and bananas" />
+    <FoodItem title="Mangoes and Banans" description="I like mangoes and bananas" />
+    <FoodItem title="Mangoes and Banans" description="I like mangoes and bananas" />
+  </div>
 </template>
+
+<style>
+.container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 40px;
+}
+</style>
 
 <style scoped>
 header {
