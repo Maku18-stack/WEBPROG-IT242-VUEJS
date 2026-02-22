@@ -1,57 +1,31 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
-<script setup>
 import FoodItem from './components/FoodItem.vue'
 </script>
 
 <template>
-  <h1>Fruits</h1>
+  <h1 class="title">Fruits</h1>
 
   <div class="container">
-    <FoodItem title="Mangoes and Apples" description="I like mangoes and Grapes" />
-    <FoodItem title="Mangoes and Banans" description="I like mangoes and Buko" />
-    <FoodItem title="Mangoes and Chicos" description="I like mangoes and Orange" />
-    <FoodItem title="Mangoes and Pineapple" description="I like mangoes and bananas" />
+    <FoodItem title="Mangoes and Bananas" description="I like mangoes and bananas" />
+    <FoodItem title="Apples" description="Crisp and sweet" />
+    <FoodItem title="Grapes" description="Small but tasty" />
+    <FoodItem title="Oranges" description="Fresh and juicy" />
   </div>
 </template>
 
 <style>
-.container {
+.title{
+  text-align: center;
+  margin-top: 30px;
+  font-family: Arial, sans-serif;
+}
+
+.container{
   display: flex;
   gap: 20px;
   justify-content: center;
-  margin-top: 40px;
-}
-</style>
-
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+  flex-wrap: wrap;
+  margin-top: 30px;
+  padding: 0 16px;
 }
 </style>
