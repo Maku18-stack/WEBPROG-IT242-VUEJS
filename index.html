@@ -5,6 +5,14 @@
   <script src="https://unpkg.com/vue@3"></script>
   <link rel="stylesheet" href="css/style.css">
 </head>
+
+<div id="gallery">
+  <h2>Gallery</h2>
+  <img v-for="pic in images" :src="pic" width="150" style="margin:8px;">
+</div>
+
+<script src="https://unpkg.com/vue@3"></script>
+<script src="js/gallery.js"></script>  
 <body>
 
 <div id="app">
