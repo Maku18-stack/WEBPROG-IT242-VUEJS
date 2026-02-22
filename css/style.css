@@ -1,5 +1,35 @@
-body {
-  background-color: lightblue;
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: lightblue;
   text-align: center;
-  font-family: Arial;
+}
+
+/* space the sections nicely */
+#app{
+  padding: 30px 16px 10px;
+}
+
+#gallery{
+  padding: 10px 16px 40px;
+}
+
+#gallery h2{
+  margin: 10px 0 18px;
+}
+
+/* make images aligned + same size */
+#gallery{
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#gallery img{
+  width: 180px;
+  height: 180px;
+  object-fit: cover;   /* crops nicely */
+  border-radius: 10px;
+  display: inline-block;
+  margin: 10px;
+  background: rgba(255,255,255,0.5);
 }
