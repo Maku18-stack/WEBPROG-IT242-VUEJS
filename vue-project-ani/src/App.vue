@@ -92,6 +92,7 @@ body{
   letter-spacing: 0.2px;
 }
 
+
 .card{
   background: var(--card);
   border: 1px solid var(--border);
