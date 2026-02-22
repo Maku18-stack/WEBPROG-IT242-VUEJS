@@ -5,31 +5,33 @@ body{
   text-align: center;
 }
 
-/* space the sections nicely */
+/* Hello Vue spacing */
 #app{
   padding: 30px 16px 10px;
 }
 
-#gallery{
-  padding: 10px 16px 40px;
-}
-
-#gallery h2{
-  margin: 10px 0 18px;
-}
-
-/* make images aligned + same size */
+/* Gallery section */
 #gallery{
   max-width: 900px;
   margin: 0 auto;
+  padding: 10px 16px 40px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  justify-items: center;
 }
 
+#gallery h2{
+  grid-column: 1 / -1; /* keeps title centered above grid */
+  margin-bottom: 10px;
+}
+
+/* Image styling */
 #gallery img{
   width: 180px;
   height: 180px;
-  object-fit: cover;   /* crops nicely */
+  object-fit: cover;
   border-radius: 10px;
-  display: inline-block;
-  margin: 10px;
   background: rgba(255,255,255,0.5);
 }
