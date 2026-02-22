@@ -21,3 +21,14 @@ li {
   width: 200px;
   border-radius: 6px;
 }
+body{
+  background: #a7c7d7;
+}
+
+.gallery-img{
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 10px;
+}
