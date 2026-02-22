@@ -1,34 +1,71 @@
-body {
-  font-family: Arial;
-  text-align: center;
-  background-color: #f4f4f4;
+:root{
+  --bg1: #f8fafc;
+  --bg2: #e2e8f0;
+  --card: rgba(255,255,255,0.75);
+  --accent: #334155;
 }
 
-img {
-  border-radius: 50%;
-  margin: 15px 0;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  background: white;
-  margin: 5px auto;
-  padding: 8px;
-  width: 200px;
-  border-radius: 6px;
-}
 body{
-  background: #a7c7d7;
+  background: linear-gradient(135deg, var(--bg1), var(--bg2));
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* smaller + softer profile image */
+.profile-img{
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  opacity: 0.95;
+}
+
+/* glass card look */
+.glass{
+  background: var(--card);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+}
+
+/* skill cards */
+.skill-card{
+  background: var(--card);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+/* contact box */
+.contact-box{
+  background: rgba(255,255,255,0.6);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+/* gallery */
+.vue-gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
 }
 
 .gallery-img{
   width: 240px;
   height: 240px;
   object-fit: cover;
-  border-radius: 12px;
-  margin: 10px;
+  border-radius: 14px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.10);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.gallery-img:hover{
+  transform: scale(1.04);
+  box-shadow: 0 16px 28px rgba(0,0,0,0.15);
+}
+
+/* navbar style */
+.navbar{
+  background: #0f172a !important;
 }
