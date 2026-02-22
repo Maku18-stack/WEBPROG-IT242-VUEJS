@@ -6,6 +6,6 @@ Vue.createApp({
         "images/img2.jpg",
         "images/img3.jpg"
       ]
-    }
+    };
   }
 }).mount("#gallery");
