@@ -1,4 +1,4 @@
-const gallery = Vue.createApp({
+Vue.createApp({
   data() {
     return {
       images: [
@@ -8,6 +8,4 @@ const gallery = Vue.createApp({
       ]
     }
   }
-});
-
-gallery.mount('#gallery');
+}).mount("#gallery");
