@@ -12,9 +12,10 @@ body{
 
 /* Gallery section */
 #gallery{
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 10px 16px 40px;
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
