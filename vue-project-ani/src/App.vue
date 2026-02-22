@@ -11,10 +11,10 @@ import FoodItem from './components/FoodItem.vue'
   <h1>Fruits</h1>
 
   <div class="container">
-    <FoodItem title="Mangoes and Banans" description="I like mangoes and bananas" />
-    <FoodItem title="Mangoes and Banans" description="I like mangoes and bananas" />
-    <FoodItem title="Mangoes and Banans" description="I like mangoes and bananas" />
-    <FoodItem title="Mangoes and Banans" description="I like mangoes and bananas" />
+    <FoodItem title="Mangoes and Apples" description="I like mangoes and Grapes" />
+    <FoodItem title="Mangoes and Banans" description="I like mangoes and Buko" />
+    <FoodItem title="Mangoes and Chicos" description="I like mangoes and Orange" />
+    <FoodItem title="Mangoes and Pineapple" description="I like mangoes and bananas" />
   </div>
 </template>
 
