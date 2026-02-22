@@ -1,4 +1,5 @@
 <script setup>
+import Profile from './components/Profile.vue'
 import FoodItem from './components/FoodItem.vue'
 import FoodItem2 from './components/FoodItem2.vue'
 </script>
@@ -13,6 +14,7 @@ import FoodItem2 from './components/FoodItem2.vue'
       <FoodItem title="Grapes" description="Small but tasty" />
       <FoodItem title="Oranges" description="Fresh and juicy" />
       <FoodItem2 title="Strawberries" description="Sweet and fresh" />
+      <Profile />
     </div>
   </div>
 </template>
