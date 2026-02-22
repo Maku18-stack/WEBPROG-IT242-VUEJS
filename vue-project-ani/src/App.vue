@@ -12,6 +12,7 @@ import FoodItem2 from './components/FoodItem2.vue'
       <FoodItem title="Apples" description="Crisp and sweet" />
       <FoodItem title="Grapes" description="Small but tasty" />
       <FoodItem title="Oranges" description="Fresh and juicy" />
+      <FoodItem2 title="Strawberries" description="Sweet and fresh" />
     </div>
   </div>
 </template>
