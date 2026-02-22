@@ -1,110 +1,50 @@
 <template>
-  <section class="profile-wrap">
-    <div class="profile-card">
-      <div class="top">
-        <div>
-          <h2 class="name">Mark Ani</h2>
-          <p class="sub">BS Information Technology Student</p>
-          <p class="sub2">Web Programming</p>
-        </div>
-
-        <img class="avatar" src="/images/profile.jpg" alt="Profile photo" />
+  <section class="section">
+    <div class="wrap">
+      <div class="box">
+        <p><b>Name:</b> Mark Ani</p>
       </div>
 
-      <div class="section">
-        <h3>Skills</h3>
-        <div class="chips">
-          <span class="chip">HTML</span>
-          <span class="chip">CSS</span>
-          <span class="chip">JavaScript</span>
-          <span class="chip">Vue</span>
-          <span class="chip">GitHub</span>
-        </div>
+      <div class="box">
+        <p><b>Course:</b> BS Information Technology</p>
+        <p><b>IT Experience:</b> HTML, CSS, JavaScript, Vue</p>
       </div>
 
-      <div class="section">
-        <h3>About</h3>
-        <p class="about">
-          This profile was imported from my midterms website and integrated into my Vue project.
-        </p>
+      <div class="box">
+        <p><b>Hobbies:</b> Coding, Music, Gaming</p>
+        <p><b>Goal:</b> Improve as a developer</p>
       </div>
     </div>
   </section>
 </template>
 
 <style scoped>
-.profile-wrap{
-  padding: 40px 16px;
-  display: flex;
-  justify-content: center;
-}
-
-.profile-card{
-  width: min(900px, 100%);
-  background: #ffffff;
-  border-radius: 18px;
-  padding: 26px;
-  box-shadow: 0 14px 30px rgba(0,0,0,.10);
-}
-
-.top{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-
-.name{
-  margin: 0;
-  font-size: 34px;
-}
-
-.sub{
-  margin: 6px 0 0;
-  color: #4b5563;
-}
-.sub2{
-  margin: 2px 0 0;
-  color: #6b7280;
-}
-
-.avatar{
-  width: 120px;
-  height: 120px;
-  border-radius: 999px;
-  object-fit: cover;
-  border: 4px solid #e5e7eb;
-}
-
 .section{
-  margin-top: 22px;
+  background: var(--lavender);
+  padding: 22px 16px;
+  margin: 18px 0;
 }
 
-.section h3{
-  margin: 0 0 10px;
+.wrap{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
-.chips{
+.box{
+  background: #fff;
+  border: 4px solid var(--purple);
+  padding: 14px 16px;
+  min-height: 70px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
-.chip{
-  background: #eef2ff;
-  color: #3730a3;
-  padding: 8px 12px;
-  border-radius: 999px;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.about{
-  margin: 0;
-  color: #374151;
-  line-height: 1.6;
+.box p{
+  margin: 6px 0;
 }
 </style>
-
-<img src="/images/profile.jpg" class="profile-pic" alt="Profile photo"></img>

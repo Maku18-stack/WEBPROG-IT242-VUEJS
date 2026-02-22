@@ -1,63 +1,61 @@
 <script setup>
-import FoodItem from './components/FoodItem.vue'
-import FoodItem2 from './components/FoodItem2.vue'
 import Profile from './components/Profile.vue'
+import Gallery from './components/Gallery.vue'
+import Fruits from './components/Fruits.vue'
 </script>
 
 <template>
   <div class="page">
-    <h1 class="title">Fruits</h1>
+    <header class="hero">
+      <h1 class="main-title">Personal Profile Web Page</h1>
+      <h2 class="sub-title">About Me</h2>
+    </header>
 
-    <div class="grid">
-      <FoodItem title="Mangoes and Bananas" description="I like mangoes and bananas" />
-      <FoodItem title="Apples" description="Crisp and sweet" />
-      <FoodItem title="Grapes" description="Small but tasty" />
-      <FoodItem title="Oranges" description="Fresh and juicy" />
-
-      <!-- Second component -->
-      <FoodItem2 title="Strawberries" description="Sweet and fresh" />
-    </div>
-
-    <div class="divider"></div>
-
-    <!-- ✅ only ONE profile -->
     <Profile />
+    <Gallery />
+    <Fruits />
   </div>
 </template>
 
 <style>
-/* Full-width backdrop fix */
-html, body, #app { height: 100%; margin: 0; }
-body { background: #0b0f14; }
+:root{
+  --lavender:#d8c2f1;
+  --lavender2:#efe7fb;
+  --purple:#7b3ea6;
+  --text:#111827;
+}
+
+html, body, #app{
+  height: 100%;
+  margin: 0;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: var(--text);
+}
 
 .page{
-  min-height: 100vh;
   width: 100%;
-  padding: 40px 16px 60px;
-  color: #e5e7eb;
-  font-family: Arial, sans-serif;
 }
 
-.title{
+.hero{
   text-align: center;
-  font-size: 42px;
-  margin: 0 0 28px;
+  padding: 28px 16px 10px;
 }
 
-.grid{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 18px;
-  max-width: 1100px;
-  margin: 0 auto;
-  justify-items: center;
-  align-items: start;
+.main-title{
+  font-family: "Georgia", serif;
+  font-style: italic;
+  margin: 0;
+  font-size: 44px;
 }
 
-.divider{
-  height: 1px;
-  max-width: 1100px;
-  margin: 40px auto;
-  background: rgba(255,255,255,0.12);
+.sub-title{
+  margin: 12px 0 0;
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-size: 26px;
 }
 </style>
