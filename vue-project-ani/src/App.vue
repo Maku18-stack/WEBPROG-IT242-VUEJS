@@ -15,6 +15,7 @@ import FoodItem2 from './components/FoodItem2.vue'
       <FoodItem title="Oranges" description="Fresh and juicy" />
       <FoodItem2 title="Strawberries" description="Sweet and fresh" />
       <Profile />
+      <Profile />
     </div>
   </div>
 </template>
