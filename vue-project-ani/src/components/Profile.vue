@@ -106,3 +106,5 @@
   line-height: 1.6;
 }
 </style>
+
+<img src="/images/profile.jpg" class="profile-pic" alt="Profile photo"></img>
