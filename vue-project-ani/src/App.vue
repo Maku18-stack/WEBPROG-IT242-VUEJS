@@ -3,6 +3,7 @@ import Profile from './components/Profile.vue'
 import Gallery from './components/Gallery.vue'
 import Fruits from './components/Fruits.vue'
 import CommentsSection from './components/CommentsSection.vue'
+import RestApi from './components/RestApi.vue'
 </script>
 
 <template>
@@ -44,6 +45,22 @@ import CommentsSection from './components/CommentsSection.vue'
         <CommentsSection />
       </div>
     </section>
+
+    <!-- REST API -->
+<section class="section">
+  <h2 class="section-title">REST API</h2>
+  <div class="card">
+    <RestApi />
+  </div>
+</section>
+
+    <!-- REST API -->
+<section class="section">
+  <h2 class="section-title">REST API</h2>
+  <div class="card">
+    <RestApi />
+  </div>
+</section>
 
     <footer class="footer">© 2026 Mark Ani</footer>
   </div>
@@ -108,7 +125,6 @@ body{
   border-radius: 16px;
   padding: 18px;
 }
-
 .footer{
   text-align:center;
   padding: 30px 16px 40px;
@@ -116,3 +132,4 @@ body{
   font-size: 14px;
 }
 </style>
+

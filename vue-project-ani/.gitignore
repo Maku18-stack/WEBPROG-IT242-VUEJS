@@ -51,3 +51,6 @@ dist
 .env
 .vscode
 .DS_Store
+
+
+.env
