@@ -2,6 +2,7 @@
 import Profile from './components/Profile.vue'
 import Gallery from './components/Gallery.vue'
 import Fruits from './components/Fruits.vue'
+import CommentsSection from './components/CommentsSection.vue'
 </script>
 
 <template>
@@ -33,6 +34,14 @@ import Fruits from './components/Fruits.vue'
       <h2 class="section-title">Fruits</h2>
       <div class="card">
         <Fruits />
+      </div>
+    </section>
+
+        <!-- Comments -->
+    <section class="section">
+      <h2 class="section-title">Comments</h2>
+      <div class="card">
+        <CommentsSection />
       </div>
     </section>
 
