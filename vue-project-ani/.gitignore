@@ -45,3 +45,9 @@ node_modules/
 .env
 .env.*
 dist/
+
+node_modules
+dist
+.env
+.vscode
+.DS_Store
